@@ -11,7 +11,7 @@ namespace Tracker.Triangle.Test
     {
       Triangle testTriangle = new Triangle(3, 5, 8);
       // is largest side > other sides combined
-      Assert.AreEqual(true, testTriangle.IsTriangle());
+      Assert.AreEqual(true, testTriangle.IsTriangle(testTriangle.Side1, testTriangle.Side2, testTriangle.Side3));
     }
 	}
 }
